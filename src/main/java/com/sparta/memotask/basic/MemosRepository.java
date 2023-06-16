@@ -6,25 +6,25 @@ import java.util.List;
 import java.util.Map;
 
 public class MemosRepository {
-    private static Map<Long, Memos> store = new HashMap<>();
+    private static Map<Long, Memo> memoMap = new HashMap<>();
 
-    private static long sequence = 0L;
+    private static Long sequence = 0L;
 
-    public Memos save(Memos memos) {
-        memos.setId(++sequence);
-        store.put(memos.getId(), memos);
-        return memos;
+    public Memo write(Memo memo) {
+        memo.setId(++sequence);
+        memoMap.put(memo.getId(), memo);
+        return memo;
     }
 
-    public Memos findById(Long id) {
-        return store.get(id);
+    public Memo findById(Long id) {
+        return memoMap.get(id);
     }
 
-    public List<Memos> findAll() {
-        return new ArrayList<>(store.values());
+    public List<Memo> findAll() {
+        return new ArrayList<>(memoMap.values());
     }
 
     public void delete(Long id) {
-        store.remove(id);
+        memoMap.remove(id);
     }
 }
