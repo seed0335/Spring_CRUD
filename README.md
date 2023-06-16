@@ -33,7 +33,8 @@
 6번 선택한 게시글 삭제 API 
 - 성공 메시지 표시 O
 
-![image](https://github.com/seed0335/Spring_CRUD/assets/127582298/c2e917b4-72c4-4157-b425-ce3b9751953a).
+![image](https://github.com/seed0335/Spring_CRUD/assets/127582298/c5913b14-5013-438b-b46d-cdc48601f7dc)
+
 
 API 명세서 
 ![image](https://github.com/seed0335/Spring_CRUD/assets/127582298/e9e79a0b-a87e-4a7e-a844-4c511cb24578)
